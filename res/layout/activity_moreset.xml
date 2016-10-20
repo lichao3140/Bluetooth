@@ -1,0 +1,255 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBlue"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_feedback_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dip"
+            android:text="设置"
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+
+        <TextView
+            android:id="@+id/txt_feedback_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="18dip" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#f0f0f0"
+                android:paddingBottom="5dip"
+                android:paddingLeft="15dip"
+                android:paddingTop="15dip"
+                android:text="问题反馈"
+                android:textColor="@color/deepGray"
+                android:textSize="12dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <View style="@style/my_horizontal_line_style" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp" >
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:text="信息格式:"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radio_str"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:button="@drawable/mycheckbox"
+                            android:checked="true"
+                            android:nextFocusRight="@+id/radio_hex_off"
+                            android:paddingLeft="5dp"
+                            android:text="字符"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+                        <RadioButton
+                            android:id="@+id/radio_hex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:button="@drawable/mycheckbox"
+                            android:nextFocusDown="@+id/etxt_lable_on"
+                            android:paddingLeft="5dp"
+                            android:text="十六进制"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+                    </RadioGroup>
+                </RelativeLayout>
+
+                <View style="@style/my_horizontal_line_style" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_feedback_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/cb_feedback_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:button="@drawable/mycheckbox"
+                        android:padding="10dip"
+                        android:text="出现异常退出"
+                        android:textSize="14dip" />
+                </RelativeLayout>
+
+                <View style="@style/my_horizontal_line_style" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_feedback_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/cb_feedback_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:button="@drawable/mycheckbox"
+                        android:padding="10dip"
+                        android:text="出现卡顿或黑屏"
+                        android:textSize="14dip" />
+                </RelativeLayout>
+
+                <View style="@style/my_horizontal_line_style" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_feedback_4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/cb_feedback_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:button="@drawable/mycheckbox"
+                        android:padding="10dip"
+                        android:text="启动速度慢"
+                        android:textSize="14dip" />
+                </RelativeLayout>
+
+                <View style="@style/my_horizontal_line_style" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_feedback_5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/cb_feedback_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:button="@drawable/mycheckbox"
+                        android:padding="10dip"
+                        android:text="耗手机内存"
+                        android:textSize="14dip" />
+                </RelativeLayout>
+
+                <View style="@style/my_horizontal_line_style" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_feedback_6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/cb_feedback_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:button="@drawable/mycheckbox"
+                        android:padding="10dip"
+                        android:text="部分功能操作不方便"
+                        android:textSize="14dip" />
+                </RelativeLayout>
+
+                <View style="@style/my_horizontal_line_style" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_feedback_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/cb_feedback_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:button="@drawable/mycheckbox"
+                        android:padding="10dip"
+                        android:text="显示乱码"
+                        android:textSize="14dip" />
+                </RelativeLayout>
+
+                <View style="@style/my_horizontal_line_style" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

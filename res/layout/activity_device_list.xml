@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_titleOfMyDevice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBlue"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:text="我的设备"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+    <!-- ******************************* 我的设备的具体信息  ****************************************** -->
+
+    <RelativeLayout
+        android:id="@+id/layout_MyDeviceInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/item_bg_middle" >
+
+        <ImageView
+            android:id="@+id/iv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/phone" />
+
+        <CheckBox
+            android:id="@+id/cb_isDiscoverable"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/mycheckbox"
+            android:checked="false" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/cb_isDiscoverable"
+            android:layout_toRightOf="@+id/iv_phone"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_myDeviceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="myDeviceName"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_myDeviceState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="myDeviceState"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBlue" >
+
+        <TextView
+            android:id="@+id/txt_state_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:text="正在搜索..."
+            android:textColor="@color/white"
+            android:textSize="16dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title_paired_devices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:text="可用设备"
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ExpandableListView
+            android:id="@+id/expandableListView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/button_scan"
+            android:groupIndicator="@drawable/ex_list_bg_parent" >
+        </ExpandableListView>
+
+        <Button
+            android:id="@+id/button_scan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="2dp"
+            android:background="@drawable/btn_bg"
+            android:padding="5dp"
+            android:text="@string/button_scan"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <!-- 搜索到的设备列表 -->
+    </RelativeLayout>
+
+</LinearLayout>

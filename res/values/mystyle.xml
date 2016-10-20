@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="my_edittext_int_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">number</item>
+         <item name="android:textColor">#990033</item><!-- 深红色 -->
+        <item name="android:maxLength">3</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="my_edittext_float_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">numberDecimal</item>
+		<item name="android:textColor">#009933</item><!-- 深绿色 -->
+        <item name="android:maxLength">3</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="my_textview_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#0099ff</item>
+    </style>
+
+    <style name="my_vertical_line_style">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#d1d1d1</item>
+    </style>
+
+    <style name="my_horizontal_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#d1d1d1</item>
+    </style> 
+    
+    <style name="my_pop_anim">  
+        <!--   <item name="android:windowEnterAnimation">@anim/pop_show</item>     -->
+    	<item name="android:windowExitAnimation">@anim/pop_dismiss</item>
+    </style> 
+    
+    <style name="ActionSheetDialog" parent="android:Theme.Dialog">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_out</item>
+    </style>
+
+</resources>

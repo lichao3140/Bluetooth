@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bluetooth</string>
+    <string name="hexSend">HEX Send</string>
+    <string name="hexRec">HEX Receive</string>
+    <string name="clear">Clear</string>
+    <string name="autoSend">AutoSend</string>
+    <string name="yes">Yes</string>
+    <string name="ok">OK</string>
+    <string name="no">No</string>
+    <string name="exit">Exit</string>
+    <string name="cancle">Cancle</string>
+    <string name="back">Back</string>
+    <string name="exit_tip">Exit tip</string>
+    <string name="close_BT">Close BluetoothAdapter</string>
+    <string name="abt">About</string>
+    <string name="about_us">About us</string>
+    <string name="mor">More</string>
+    <string name="info_us">\t\t909318264</string>
+    <string name="info_mail">email</string>
+
+    <!--  BluetoothChat -->
+    <string name="send">Send</string>
+    <string name="no_bt">Bluetooth is not available</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected: </string>
+    <string name="connected_to">Connected to</string>
+    <string name="title_not_connected">not connected</string>
+    <string name="unable_to_connect">Unable to connect device</string>
+    <string name="lost_connect">Device connection was lost</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+    <string name="button_stop_scan">stop scan for devices</string>
+    <string name="scan_over">scan over</string>
+
+    <!-- Options Menu -->
+    <string name="secure_connect">Connect a device - Secure</string>
+    <string name="insecure_connect">Connect a device - Insecure</string>
+    <string name="discoverable">Make discoverable</string>
+    <string name="set">Set</string>
+    <string name="save">Save</string>
+    <string name="exit_confirm">Do you relly want to exit？</string>
+    <string name="parameter_set">Parameter set</string>
+
+</resources>

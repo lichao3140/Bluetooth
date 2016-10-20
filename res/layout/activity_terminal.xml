@@ -1,0 +1,254 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#eeeeee"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/r1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <CheckBox
+                        android:id="@+id/cbox_hexsend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:button="@drawable/mycheckbox"
+                        android:paddingBottom="5dip"
+                        android:paddingLeft="5dip"
+                        android:paddingTop="3dip"
+                        android:text="十六进制发送"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/r2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <CheckBox
+                        android:id="@+id/cbox_hexdis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:button="@drawable/mycheckbox"
+                        android:paddingBottom="5dip"
+                        android:paddingLeft="5dip"
+                        android:paddingTop="3dip"
+                        android:text="十六进制显示"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/r3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <CheckBox
+                        android:id="@+id/cbox_newline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/mycheckbox"
+                        android:paddingBottom="5dip"
+                        android:paddingLeft="5dip"
+                        android:paddingTop="3dip"
+                        android:text="换行显示"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/r4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <CheckBox
+                        android:id="@+id/cbox_autoclear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/mycheckbox"
+                        android:paddingBottom="5dip"
+                        android:paddingLeft="5dip"
+                        android:paddingTop="3dip"
+                        android:text="自动清空"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/my_horizontal_line_style" />
+
+    <!-- 会话内容列表 -->
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.30"
+        android:background="#dddddd" >
+
+        <TextView
+            android:id="@+id/txt_rec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="3"
+            android:lineSpacingExtra="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#000000"
+            android:textSize="24dp" />
+    </ScrollView>
+
+    <View style="@style/my_horizontal_line_style" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <!-- 信息文本编辑框 -->
+
+        <EditText
+            android:id="@+id/edit_text_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="1dp"
+            android:layout_toLeftOf="@+id/button_send"
+            android:background="@drawable/txt_bg"
+            android:enabled="false"
+            android:hint="请输入信息"
+            android:paddingBottom="6dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:textSize="20dp" />
+
+        <!-- 信息发送按钮 -->
+
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/btn_bg"
+            android:padding="8dp"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <!-- 信息编辑 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:background="@drawable/btn_bg"
+            android:padding="5dp"
+            android:text="@string/clear"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <!-- 自动发送选择框 -->
+
+        <CheckBox
+            android:id="@+id/autoSend"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dip"
+            android:button="@drawable/mycheckbox"
+            android:enabled="false"
+            android:text="@string/autoSend"
+            android:textSize="20dp" />
+        <!-- 信息发送按钮 -->
+
+        <EditText
+            android:id="@+id/sendPerid_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="1dp"
+            android:layout_weight="0.67"
+            android:background="@drawable/txt_bg"
+            android:enabled="false"
+            android:hint="周期(ms)"
+            android:inputType="number"
+            android:maxLength="5"
+            android:paddingBottom="6dp"
+            android:paddingLeft="8dp"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:id="@+id/layout_count"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/Rx_count_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RX:0"
+                android:textSize="16dp" />
+
+            <requestFocus />
+
+            <TextView
+                android:id="@+id/Tx_count_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TX:0"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

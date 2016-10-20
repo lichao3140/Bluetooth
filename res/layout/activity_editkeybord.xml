@@ -1,0 +1,400 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/r11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ToggleButton
+                android:id="@+id/tbutton11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ToggleButton
+                android:id="@+id/tbutton12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r13"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ToggleButton
+                android:id="@+id/tbutton13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ToggleButton
+                android:id="@+id/tbutton14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="24dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/r21"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ToggleButton
+                android:id="@+id/tbutton21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r22"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ToggleButton
+                android:id="@+id/tbutton22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r23"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ToggleButton
+                android:id="@+id/tbutton23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r24"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ToggleButton
+                android:id="@+id/tbutton24"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="24dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/r31"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ToggleButton
+                android:id="@+id/tbutton31"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r32"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ToggleButton
+                android:id="@+id/tbutton32"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r33"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ToggleButton
+                android:id="@+id/tbutton33"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r34"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ToggleButton
+                android:id="@+id/tbutton34"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="24dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/r41"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ToggleButton
+                android:id="@+id/tbutton41"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r42"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ToggleButton
+                android:id="@+id/tbutton42"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r43"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ToggleButton
+                android:id="@+id/tbutton43"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r44"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ToggleButton
+                android:id="@+id/tbutton44"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="24dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/r51"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ToggleButton
+                android:id="@+id/tbutton51"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r52"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ToggleButton
+                android:id="@+id/tbutton52"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r53"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ToggleButton
+                android:id="@+id/tbutton53"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r54"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ToggleButton
+                android:id="@+id/tbutton54"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="24dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.005"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/r6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:text="按住按钮不放以自定义按钮功能"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:text="开和关的状态定义相同的信息，则可以作为普通按钮使用"
+                android:textSize="12dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

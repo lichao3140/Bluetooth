@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_usefulDeviceInfo"
+    android:layout_width="fill_parent"
+    android:background="@drawable/item_bg_middle"
+    android:layout_height="50dp" >
+
+    <ImageView
+        android:id="@+id/iv_deviceType"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/phone" />
+
+    <ImageView
+        android:id="@+id/iv_onright"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:paddingRight="5dp"
+        android:layout_marginRight="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/onright" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@+id/iv_onright"
+        android:layout_toRightOf="@+id/iv_deviceType"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_deviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DeviceName"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_deviceAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="DeviceAddress"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</RelativeLayout>

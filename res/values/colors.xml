@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+<color name="white">#FFFFFF</color><!--白色 -->
+<color name="black">#000000</color><!--黑色 -->
+<color name="lightGray">#c1c1c1</color><!-- 浅灰色 -->
+<color name="deepGray">#595959</color><!-- 深灰色 -->
+<color name="lightBlue">#0099ff</color><!--淡蓝色 -->
+<color name="deepGreen">#009933</color><!--深绿色 -->
+<color name="deepRed">#990033</color><!--淡红色 -->
+<color name="dialog_window_background">#99ffffff</color> 
+    
+</resources>

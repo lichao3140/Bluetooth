@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBlue"
+        android:textColor="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="按钮编辑器"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="状态OFF" 
+   			android:textColor="@color/black"
+        	android:textSize="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp" >
+
+            <TextView
+                android:id="@+id/textView_bq_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+        		android:textSize="16dp" 
+        		android:paddingLeft="10dp"
+       			android:textColor="@color/black"
+                android:text="按钮标签:" />
+
+            <EditText
+                android:id="@+id/etxt_lable_off"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView_bq_off"
+            	android:background="@drawable/txt_bg"
+                android:ems="10"
+                android:inputType="text"
+        		android:textSize="16dp" 
+       			android:textColor="@color/black"
+	            android:layout_margin="1dp"
+	            android:paddingLeft="8dp"
+	            android:paddingBottom="6dp"
+	            android:nextFocusDown="@+id/etxt_msg_off" >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+        		android:textSize="16dp" 
+        		android:paddingLeft="10dp"
+       			android:textColor="@color/black"
+                android:text="信息内容:" />
+
+            <EditText
+                android:id="@+id/etxt_msg_off"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView3"
+            	android:background="@drawable/txt_bg"
+                android:ems="10"
+                android:inputType="text"
+        		android:textSize="16dp" 
+       			android:textColor="@color/black"
+	            android:layout_margin="1dp"
+	            android:paddingLeft="8dp"
+	            android:paddingBottom="6dp"
+	            android:nextFocusDown="@+id/radio_str_off" >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp" >
+		
+		    <TextView
+		        android:id="@+id/textView4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+        			android:textColor="@color/black"
+        		android:textSize="16dp" 
+        		android:paddingLeft="10dp"
+		        android:text="信息格式:" />
+		
+		     <RadioGroup
+		         android:id="@+id/radioGroup1"
+		         android:layout_width="wrap_content"
+		         android:layout_height="match_parent"
+		         android:layout_toRightOf="@+id/textView4"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+		         android:orientation="horizontal" >
+		
+		         <RadioButton
+		             android:id="@+id/radio_str_off"
+		             android:layout_width="wrap_content"
+		             android:layout_height="match_parent"
+           			 android:button="@drawable/mycheckbox" 
+           			 android:paddingLeft="5dp"
+		             android:checked="true"
+        			android:textSize="16dp" 
+        			android:textColor="@color/black"
+		             android:text="字符"
+	            	android:nextFocusRight="@+id/radio_hex_off" />
+		
+		         <RadioButton
+		             android:id="@+id/radio_hex_off"
+		             android:layout_width="wrap_content"
+		             android:layout_height="match_parent"
+           			 android:button="@drawable/mycheckbox" 
+                	android:layout_marginLeft="15dp"
+        			android:textSize="16dp" 
+           			 android:paddingLeft="5dp"
+        			android:textColor="@color/black"
+		             android:text="十六进制" 
+	            	android:nextFocusDown="@+id/etxt_lable_on"/>
+		     </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+    
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical" 
+                android:padding="1dp">
+
+                <!-- 分隔线 -->
+
+                <View style="@style/my_horizontal_line_style" />
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+        	android:textSize="18dp" 
+   			android:textColor="@color/black"
+            android:text="状态ON" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp" >
+
+            <TextView
+                android:id="@+id/textView_bq_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+        		android:textSize="16dp" 
+        		android:paddingLeft="10dp"
+       			android:textColor="@color/black"
+                android:text="按钮标签:" />
+
+            <EditText
+                android:id="@+id/etxt_lable_on"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView_bq_on"
+            	android:background="@drawable/txt_bg"
+                android:ems="10"
+       			android:textColor="@color/black"
+                android:inputType="text"
+        		android:textSize="16dp" 
+	            android:layout_margin="1dp"
+	            android:paddingLeft="8dp"
+	            android:paddingBottom="6dp" 
+	            android:nextFocusDown="@+id/etxt_msg_on">
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp" >
+
+            <TextView
+                android:id="@+id/textView_nr_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+        		android:textSize="16dp" 
+        		android:paddingLeft="10dp"
+       			android:textColor="@color/black"
+                android:text="信息内容:" />
+
+            <EditText
+                android:id="@+id/etxt_msg_on"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView_nr_on"
+            	android:background="@drawable/txt_bg"
+                android:ems="10"
+       			android:textColor="@color/black"
+                android:inputType="text"
+        		android:textSize="16dp" 
+	            android:layout_margin="1dp"
+	            android:paddingLeft="8dp"
+	            android:paddingBottom="6dp"
+	            android:nextFocusDown="@+id/radio_str_on" >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp" >
+		
+		    <TextView
+		        android:id="@+id/textView_gs_on"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+        		android:textSize="16dp" 
+        		android:paddingLeft="10dp"
+       			android:textColor="@color/black"
+		        android:text="信息格式:" />
+		
+		     <RadioGroup
+		         android:id="@+id/radioGroup2"
+		         android:layout_width="wrap_content"
+		         android:layout_height="match_parent"
+		         android:layout_toRightOf="@+id/textView_gs_on"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+		         android:orientation="horizontal" >
+		
+		         <RadioButton
+		             android:id="@+id/radio_str_on"
+		             android:layout_width="wrap_content"
+		             android:layout_height="match_parent"
+           			 android:button="@drawable/mycheckbox" 
+           			 android:paddingLeft="5dp"
+		             android:checked="true"
+        			android:textColor="@color/black"
+        			android:textSize="16dp" 
+		             android:text="字符" 
+	            	android:nextFocusRight="@+id/radio_hex_on"/>
+		
+		         <RadioButton
+		             android:id="@+id/radio_hex_on"
+		             android:layout_width="wrap_content"
+		             android:layout_height="match_parent"
+           			 android:button="@drawable/mycheckbox" 
+                	android:layout_marginLeft="15dp"
+           			 android:paddingLeft="5dp"
+        			android:textSize="16dp" 
+        			android:textColor="@color/black"
+		             android:text="十六进制" 
+	            	android:nextFocusDown="@+id/tbutton_cancle"/>
+		     </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+    
+                <View style="@style/my_horizontal_line_style" />
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+		
+		   <Button
+		       android:id="@+id/tbutton_cancle"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_weight="1"
+		       android:background="@color/lightBlue"
+		       android:textColor="@color/white"
+		       android:textSize="20dp"
+		       android:paddingTop="10dp"
+		       android:paddingBottom="10dp"
+		       android:layout_margin="2dp"
+		       android:text="取消" 
+	            android:nextFocusRight="@+id/tbutton_ok"/>
+		
+		   <Button
+		       android:id="@+id/tbutton_ok"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_weight="1"
+		       android:background="@color/lightBlue"
+		       android:textColor="@color/white"
+		       android:textSize="20dp"
+		       android:paddingTop="10dp"
+		       android:paddingBottom="10dp"
+		       android:layout_margin="2dp"
+		       android:text="确定" />
+
+     </LinearLayout>
+
+</LinearLayout>
